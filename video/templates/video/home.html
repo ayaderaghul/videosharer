@@ -5,7 +5,7 @@
             <div class="media-body">
                 <div class="article-metadata">
                     <a class="mr-2" href="#">{{ video.author }}</a>
-                    <small class="text-muted">{{ video.date_posted }}</small>
+                    <small class="text-muted">{{ video.date_posted | date:"N d, Y" }}</small>
                 </div>
             <h2><a class="article-title" href="#">{{ video.title }}</a></h2>
             <p class="article-content">{{ video.content }}</p>
